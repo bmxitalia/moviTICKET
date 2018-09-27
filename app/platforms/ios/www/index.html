@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head><!-- START IMPORT MODULE -->
+    <meta charset="utf-8">
+      <title>Moviticket</title>
+      <script src="cordova.js" type="text/javascript"></script> 
+      <script src="js/jquery-3.1.0.js"></script> 
+      <script src="js/login.js" type="text/javascript"></script>
+      <!-- Sets initial viewport load and disables zooming  -->
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <!-- Include the compiled Ratchet CSS -->
+      <link href="css/ratchet.css" rel="stylesheet">
+      <!-- Include the compiled Ratchet JS -->
+      <script src="js/ratchet.js"></script>            
+  </head><!-- END IMPORT MODULE -->
+  <body>
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <div id="pages">
+        <!--Login-->
+        <div id="login-page" align="center">
+          <div class="content-padded"> 
+            <br>
+            <img src="img/logo.png" /><!-- START HEADER MODULE -->
+            <h5 align="center" class="middleTitle">Oltre l'assistenza comune...</h5>
+            <img src="img/sep3.png" /><br><br><br><!-- END HEADER MODULE -->
+            <form method="post" id="form"><!-- START CONTENT MODULE -->
+            <input type="text"  id="textinput"  placeholder="Inserire la username" style="text-transform:uppercase"/>  <br><br>
+            <input type="password"  id="passwordinput"  placeholder="Inserire la password" style="text-transform:uppercase"  />
+            <a id="btn1"  class="btn btn-positive" data-ignore="push">LOGIN</a>  
+            </form><!-- END HEADER MODULE -->
+            <br>  
+          </div>        
+        </div>    
+      </div>
+    </div>          
+  </body>
+</html>
+
+

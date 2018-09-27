@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "it.vsh.moviticket"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "it.vsh.moviticket"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "it.vsh.moviticket"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "it.vsh.moviticket"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "it.vsh.moviticket"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "it.vsh.moviticket"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "it.vsh.moviticket"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "it.vsh.moviticket"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "it.vsh.moviticket"
+        }
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <html>
+    <!-- START IMPORT MODULE -->
+    <head>
+      <meta charset="utf-8">
+        <title>Moviticket</title>
+        <script src="cordova.js" type="text/javascript"></script>
+        <script src="js/assistenza.js" type="text/javascript"></script>
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!-- Include the compiled Ratchet CSS -->
+        <link href="css/ratchet.css" rel="stylesheet">
+        <!-- Include the compiled Ratchet JS -->
+        <script src="js/ratchet.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <!-- END IMPORT MODULE -->
+    <body>
+      <!-- Make sure all your bars are the first things in your <body> -->
+      <!-- START MENU MODULE -->
+      <header class="bar bar-nav">
+        <a class="icon icon-left-nav pull-left myColor" href="causale.html" data-ignore="push"></a>
+        <a class="icon icon-person pull-right myColor" href="index.html" data-ignore="push"></a>
+        <h1 class="title">Benvenuto su moviticket</h1>
+      </header>
+      <!-- END MENU MODULE -->
+      <div class="content">
+        <div id="pages">
+          <!--Richiesta assistenza-->
+            <div id="description-module" align="center">
+              <div class="content-padded">
+              <!-- START HEADER MODULE -->
+                <div style="background-color:#7A0001;" class="myHeader">
+                  <span id="codiceAzienda" class="label label-primary" style="color:#ffffff;">CODICE AZIENDA:</span><br>
+                  <span id="codiceUtente" class="label label-primary" style="color:#ffffff;">CODICE UTENTE: </span><br>
+                  <span id="codiceSede" class="label label-primary" style="color:#ffffff;">SEDE SELEZIONATA: </span><br><br>
+                  <span id="codiceModello" class="label label-primary" style="color:#ffffff;">CODICE MODELLO: </span><br>
+                  <span id="codiceMatricola" class="label label-primary" style="color:#ffffff;">CODICE MATRICOLA: </span><br>
+                  <span id="descrizioneCausale" class="label label-primary" style="color:#ffffff;">CAUSALE: </span><br>
+                </div>
+                <!-- END HEDAER MODULE -->
+                <br>
+                <!-- START CONTENT MODULE -->
+                <input type="text" id="text" placeholder="Inserire una descrizione..." />
+                <br>
+                <img src="img/sep4.png" /><br>
+                <img src="" id="myImage" height="150px" width="150px"/><br>
+                <img src="img/camera.png" onclick="takephoto()" />
+                <img src="img/carica.png" onclick="takephoto2()" />
+                <!-- END CONTENT MODULE --> 
+                <!-- START REQUEST MODULE --> 
+                <a id="send" class="btn btn-positive" data-ignore="push">INVIA</a>  
+                <!-- END REQUEST MODULE -->   
+            </div>
+          </div>                                       
+        </div>
+      </div>
+  </body>
+</html>
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head><!-- START IMPORT MODULE -->
+    <meta charset="utf-8">
+      <title>Moviticket</title>
+      <script src="cordova.js" type="text/javascript"></script>
+      <script src="js/apparati.js" type="text/javascript"></script>
+      <!-- Sets initial viewport load and disables zooming  -->
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <!-- Include the compiled Ratchet CSS -->
+      <link href="css/ratchet.css" rel="stylesheet">
+      <!-- Include the compiled Ratchet JS -->
+      <script src="js/ratchet.js"></script>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+  </head><!-- END IMPORT MODULE -->
+  <body>
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav"><!-- START MENU MODULE -->
+    <a class="icon icon-left-nav pull-left myColor" href="sedi.html" data-ignore="push"></a>
+      <a class="icon icon-person pull-right myColor" href="index.html" data-ignore="push"></a>
+    <h1 class="title">Benvenuto su moviticket</h1>
+    </header><!-- END MENU MODULE -->
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <div id="pages">
+        <!--Prodotti-->
+        <div id="product-page" align="center">
+          <div class="content-padded">
+            <div style="background-color:#7A0001;" class="myHeader"><!-- START HEADER MODULE -->
+              <span id="codiceAzienda" class="label label-primary" style="color:#ffffff;">CODICE AZIENDA: </span><br>
+              <span id="codiceUtente" class="label label-primary" style="color:#ffffff;">CODICE UTENTE: </span><br>
+              <span id="codiceSede" class="label label-primary" style="color:#ffffff;">SEDE: </span><br>
+            </div> <!-- END HEADER MODULE -->
+            <br><!-- START FILTER MODULE -->
+            <input id="search" type="search" placeholder="Filtra per descrizione modello"/>
+            <input id="search1" type="search" placeholder="Filtra per ubicazione"/>
+            <a id="resetBtn" class="btn btn-positive" data-ignore="push" onclick="resetSearchApparati()">RESET</a>
+            <a id="scan"  class="btn btn-positive" data-ignore="push">SCANSIONA CODICE A BARRE</a>
+            <h5 class="middleTitle">Lista apparati:</h5><!-- END FILTER MODULE -->
+            <div class="content-padded" align="left"><!-- START CONTENT MODULE -->
+              <ul id="elencoApparati" class="table-view">
+                <li class="table-view-cell"><a class="navigate-right" data-ignore="push">Caricamento elenco apparati in corso...</a></li>
+              </ul>
+            </div><!-- END CONTENT MODULE -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <!-- START IMPORT MODULE -->
+  <head>
+    <meta charset="utf-8">
+      <title>Moviticket</title>
+      <script src="cordova.js" type="text/javascript"></script>
+      <script src="js/dettaglio.js" type="text/javascript"></script>
+      <!-- Sets initial viewport load and disables zooming  -->
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <!-- Include the compiled Ratchet CSS -->
+      <link href="css/ratchet.css" rel="stylesheet">
+      <!-- Include the compiled Ratchet JS -->
+      <script src="js/ratchet.js"></script>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <!-- END IMPORT MODULE -->
+  <body>
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <!-- START MENU MODULE -->
+    <header class="bar bar-nav">
+      <a class="icon icon-left-nav pull-left myColor" href="apparati.html" data-ignore="push"></a>
+      <a class="icon icon-person pull-right myColor" href="index.html" data-ignore="push"></a>
+      <h1 class="title">Benvenuto su moviticket</h1>
+    </header>
+    <!-- END MENU MODULE -->
+    <div class="content">  
+      <div id="pages">  
+        <!--Dettaglio dell'apparato selezionato-->
+        <div id="description-module" align="center">
+          <div class="content-padded">
+            <!-- START HEADER MODULE -->
+            <div style="background-color:#7A0001;" class="myHeader">
+              <span id="codiceAzienda" class="label label-primary" style="color:#ffffff;">CODICE AZIENDA: </span><br>
+              <span id="codiceUtente" class="label label-primary" style="color:#ffffff;">CODICE UTENTE: </span><br>
+              <span id="codiceSede" class="label label-primary" style="color:#ffffff;">SEDE SELEZIONATA: </span><br>
+            </div>
+            <!-- END HEDAER MODULE -->
+            <h5 class="middleTitle">Dettaglio apparato:</h5>
+            <!-- START CONTENT MODULE -->
+            <div style="background-color:#7A0001;" class="myHeader">
+              <span id="codiceModello" class="label label-primary" style="color:#ffffff;">CODICE MODELLO: </span><br>
+              <span id="codiceMatricola" class="label label-primary" style="color:#ffffff;">CODICE MATRICOLA: </span><br><br>
+              <span id="desModello" class="label label-primary" style="color:#ffffff;">DESCRIZIONE MODELLO: </span><br><br>
+              <span id="desMatricola" class="label label-primary" style="color:#ffffff;">DESCRIZIONE MATRICOLA: </span><br><br>
+              <span id="barCode" class="label label-primary" style="color:#ffffff;">BARCODE: </span><br><br>
+              <span id="ubicazione" class="label label-primary" style="color:#ffffff;">UBICAZIONE: </span><br><br>
+              <span id="note" class="label label-primary" style="color:#ffffff;">NOTE: </span>
+            </div>
+            <!-- END CONTENT MODULE -->
+            <br>
+            <br>
+            <!-- START REQUEST MODULE -->
+              <a class="btn btn-positive" type="button"  href="causale.html" data-ignore="push">Richiedi assistenza</a>
+            <!-- END REQUEST MODULE --> 
+          </div>
+        </div>
+      </div> 
+    </div>
+  </body>
+</html>
+
+
+                   
+               
